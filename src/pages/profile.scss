@@ -1,0 +1,45 @@
+.Profile {
+  background-color: #eeeeee;
+}
+
+.Profile-header {
+  background-color: #282c34;
+  min-height: 10vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.home-back__button {
+  width: 100%;
+  height: 40px;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: #111111;
+  opacity: 0.8;
+  color: #ffffff;
+}
+
+.profile-title__text {
+  width: 100%;
+  color: #ffffff;
+  font-size: 64px;
+  -webkit-text-stroke: 1px #ff4500;
+}
+
+.profile-article-main__text {
+  margin: 0px 10%;
+  text-align: left;
+}
+
+.profile-article-member__text {
+  margin: 0px 10%;
+  text-align: left;
+}
+
+.profile-article-member__img {
+  height: 200px;
+}
