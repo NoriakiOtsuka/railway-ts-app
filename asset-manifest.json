@@ -1,15 +1,18 @@
 {
   "files": {
-    "main.css": "/railway-ts-app/static/css/main.f9c205ef.css",
-    "main.js": "/railway-ts-app/static/js/main.c4cd8882.js",
+    "main.css": "/railway-ts-app/static/css/main.24a491cd.css",
+    "main.js": "/railway-ts-app/static/js/main.447f2f19.js",
     "static/js/787.9d988e98.chunk.js": "/railway-ts-app/static/js/787.9d988e98.chunk.js",
+    "static/media/home.png": "/railway-ts-app/static/media/home.ad9517d3da5c58d74d32.png",
+    "static/media/ikura.png": "/railway-ts-app/static/media/ikura.f686d8c54701282b3a6f.png",
+    "static/media/ayase.png": "/railway-ts-app/static/media/ayase.55797defaa9a316ea88b.png",
     "index.html": "/railway-ts-app/index.html",
-    "main.f9c205ef.css.map": "/railway-ts-app/static/css/main.f9c205ef.css.map",
-    "main.c4cd8882.js.map": "/railway-ts-app/static/js/main.c4cd8882.js.map",
+    "main.24a491cd.css.map": "/railway-ts-app/static/css/main.24a491cd.css.map",
+    "main.447f2f19.js.map": "/railway-ts-app/static/js/main.447f2f19.js.map",
     "787.9d988e98.chunk.js.map": "/railway-ts-app/static/js/787.9d988e98.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.f9c205ef.css",
-    "static/js/main.c4cd8882.js"
+    "static/css/main.24a491cd.css",
+    "static/js/main.447f2f19.js"
   ]
 }
