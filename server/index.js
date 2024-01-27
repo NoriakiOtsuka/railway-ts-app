@@ -1,5 +1,7 @@
-const express = require('express');
-const app = express();
+import { createRequire } from "module";
+
+const require = createRequire(import.meta.url);
+const app = require('express')();
 const port = 9000;
 
 app.get('/', (req, res) => {
