@@ -1,11 +1,16 @@
-import { createRequire } from "module";
+import React from "react";
+import { renderToString } from "react-dom/server";
 
-const require = createRequire(import.meta.url);
-const app = require('express')();
+import App from "../src/App.tsx"
+
+const path = require('path')
+const express = require('express')
+const app = express();
 const port = 9000;
 
 app.get('/', (req, res) => {
-  res.send('Hello World');
+  const app = renderToString(<App />);
+  res.send(app);
 })
 
 app.get('/api', (req, res) => {

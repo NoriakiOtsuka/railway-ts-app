@@ -1,13 +1,9 @@
-import path from 'path'
-import { fileURLToPath } from 'url'
+const path = require('path')
 
-const __filename = fileURLToPath(import.meta.url);
-const __dirname = path.dirname(__filename);
-
-export default {
+module.exports = {
   mode: 'development',
   entry: {
-    index: path.join(__dirname, 'server', 'index.js')
+    server: './server/index.js',
   },
   output: {
     path: path.join(__dirname, 'dist'),
@@ -22,17 +18,40 @@ export default {
   module: {
     rules: [
       {
-        test: /\.js$/,
+        test: /\.js|jsx$/,
         exclude: /node_modules/,
         use: {
           loader: 'babel-loader',
           options: {
-            presets: [['@babel/preset-env']]
+            presets: [
+              '@babel/preset-env',
+              '@babel/preset-react',
+              '@babel/preset-typescript'
+              ]
           }
-
         }
+      },
+      {
+        test: /\.ts|tsx$/,
+        exclude: /node_modules/,
+        use: 'ts-loader'
+      },
+      {
+        test: /\.scss$/,
+        use: [
+          'style-loader',
+          'css-loader',
+          'sass-loader'
+        ]
+      },
+      {
+        test: /\.png$/,
+        use: 'file-loader'
       }
     ]
+  },
+  resolve: {
+      extensions: ['.js', '.jsx', '.tsx'],
   },
   devServer: {
     contentBase: 'dist',
